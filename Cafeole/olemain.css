@@ -1,0 +1,589 @@
+@font-face {
+    font-family: 'Lavanderia';
+    src: url('font/lavanderia_sturdy-webfont.ttf');
+}
+
+
+html {
+    background-color: #f6e5cc;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.navigation {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2c180e;
+}
+
+h6 {
+    display: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+input {
+    display: none;
+}
+/*** --- NAV --- ***/
+
+nav {
+    background-color:#c19058;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 7%;
+    
+}
+
+nav a {
+	font-size:15px;
+	text-decoration:none;
+    color:white;
+    text-align: center;
+    width: 100px;
+    margin-top: 3%;
+}
+
+.menu a:hover {
+    color: #2c180e;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav svg {
+    height: 50px;
+    width: 50px;
+    fill: white;
+    margin-left: 20px;
+}
+
+.connexion {
+    background-color: #bc783b;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 15%;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+
+.connexion:hover {
+    background-color: #2c180e;
+    color: white;
+}
+
+.connexion svg {
+    height: 40px;
+    width: 40px;
+}
+
+.bonhomme {
+    display:none;
+} 
+
+/*** --- TASSE + GRANDMERE --- ***/
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+}
+
+.titre svg {
+    height: 140px;
+    width: 140px;
+    margin-top: 20px;
+    margin-bottom: -50px;
+    fill: #2c180e;
+}
+
+h1 {
+    font-weight: 100;
+    font-family: 'Lavanderia';
+    font-size: 60px;
+    color: #2c180e;
+}
+
+.grandmere figure {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.grandmere figure:hover::before {
+    content: "Tu veux du bon café? Demande à ta grand-mère";
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 25px 0 25px 25px;
+}
+
+
+.grandmere figure img {
+    width: 100%;
+}
+
+/*** --- 3 TEXTES --- ***/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 4%;
+}
+
+
+.container figure {
+    height: 130px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container figure img {
+    width: 100%;
+}
+
+
+.container figure:hover::before {
+    content: "Détail de l'article >";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    
+}
+
+.pop {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 300px;
+    border-bottom: 5px solid #2c180e;
+}
+
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #e67e22;
+}
+
+/*** --- PRODUITS --- ***/
+
+.produits {
+    text-align: center;
+    background-color: #bc783b;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.produits a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 30px;
+}
+
+.produits:hover {
+    background-color: #2c180e;
+}
+
+
+/*** --- 2 COLONNES --- ***/
+
+.lautre {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lautre a {
+    color: #e67e22;
+}
+
+.lui {
+    width: 35%;
+}
+
+.sa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/*** --- LISTE FOOTER --- ***/
+
+
+.navfooter {
+    background-color: #4f2f24;
+    margin: 0;
+    bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.navfooter a {
+    text-decoration: none;
+    color: #a47964;
+}
+
+
+.navfooter .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navfooter .wrapper svg {
+    fill: #c5957c;
+    height: 10%;
+    width: 10%;
+    opacity: 0.5;
+    margin-top: 2%;
+}
+
+ul {
+list-style:none;
+margin-left:0;
+padding-left:0;
+}
+
+li {
+margin-bottom:5px;
+}
+
+
+/*** --- RS + COPYRIGHT --- ***/
+
+.wrapper .footer {
+    display: flex;
+    margin: 0;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+.wrapper .footer svg {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    fill: #4F2F24;
+    margin-left: 10px;
+}
+
+.wrapper .footer svg:hover {
+    fill: #e67e22;
+}
+
+.rs {
+    display: flex;
+    align-items: center;
+}
+
+
+/*** --- RESPONSIVE --- ***/
+
+
+@media (max-width:970px){
+
+    .connexion{
+        display: none;
+    }
+    
+    .bonhomme {
+        display: block;
+        position: absolute;
+        right:0;
+        height: 35px;
+        width: 35px;
+        fill : black;
+        margin: 10px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4%;
+        width: 100%;
+    }
+    .pop {
+        max-width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        border-bottom: 0px;
+    }
+    
+    .container figure {
+        height: 130px;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .container p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .produits a {
+        font-size: 25px;
+    }
+    
+    .sa {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    
+    .lautre {
+        width: 100%;
+    }
+
+    .lui {
+        width: 100%;
+    }
+    
+    li:nth-child(n+2) {
+        display: none;
+    }
+
+    .navfooter .wrapper svg {
+        display: none;
+    } 
+
+    .navfooter {
+        background-color: #4f2f24;
+        padding-top: 20px;
+        padding-bottom: 20px;   
+    }
+
+    .navfooter .wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav a {
+        display: none;
+    }
+    
+    .titre svg {
+        height: 100px;
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+        padding-top: 1%;
+    }
+    
+    .wrapper {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #2c180e;
+    }
+    
+    
+    /*** --- BURGER  --- ***/
+    
+     nav {
+        display: none;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Droid Sans', sans-serif;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: black;
+        line-height: 25px;
+        
+    }
+    
+    .navigation a:hover{
+        color: white;
+        background-color: black;
+    }
+    
+    
+    .croix {
+        position: absolute;
+        margin: 10px;
+    }
+    
+      .burger {
+      display: inline-block;
+      border: 0;
+      background: none;
+      outline: 0;
+      padding: 0;
+      cursor: pointer;
+      border-bottom: 4px solid currentColor;
+      width: 28px;
+      transition: border-bottom 1s ease-in-out;
+      -webkit-transition: border-bottom 1s ease-in-out;
+    }
+    .burger::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+    .burger:before {
+      content: "";
+      display: block;
+      border-bottom: 4px solid currentColor;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+    .burger:after {
+      content: "";
+      display: block;
+      border-bottom: 4px solid currentColor;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .burger-check {
+      display: none;
+    }
+
+    .burger-check:checked ~ .burger {
+      border-bottom: 4px solid transparent;
+      transition: border-bottom 0.8s ease-in-out;
+      -webkit-transition: border-bottom 0.8s ease-in-out;
+    }
+    .burger-check:checked ~ .burger:before {
+      transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+    .burger-check:checked ~ .burger:after {
+      transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .navigation {
+      overflow: hidden;
+      max-height: 0;
+      -webkit-transition: max-height 0.5s ease-in-out;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .burger-check:checked ~ .navigation {
+      max-height: 500px;
+      -webkit-transition: max-height 0.5s ease-in-out;
+      transition: max-height 0.5s ease-in-out;
+    }
+    
+    .grandmere figure:hover::before {
+    content: "Tu veux du bon café? Demande à ta grand-mère";
+    position: absolute;
+    left:0;
+    bottom:15;
+    right:0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 25px 0 25px 25px;
+    }
+
+}
+
+
+@media (max-width:685px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 4%;
+    }
+
+
+    .container figure {
+        height: 130px;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .pop {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 100%;
+        border-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+

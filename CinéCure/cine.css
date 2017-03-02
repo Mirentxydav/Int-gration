@@ -1,0 +1,392 @@
+
+/*** --- GENERAL --- ***/
+
+body {
+    margin: 0;
+    background-image: url(triangular/triangular.png);
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 100;
+}
+
+header, h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    text-shadow: 1px 0 #ffffff;
+}
+
+.croix {
+    display: none;
+}
+
+h6{
+    display: none;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+strong {
+    font-size: 33px;
+}
+
+
+/*** --- HEADER --- ***/
+
+.haut {
+    background-image: url(simple_dashed/simple_dashed.png);
+    padding: 3%;
+}
+
+.haut .wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.haut a {
+    text-decoration: none;
+    color : white;
+}
+
+.visage {
+    background: center / cover no-repeat fixed url(Snowpiercer-06.jpg);
+    padding: 10% 0 1%;
+}
+
+.contain{
+    background-color: #373738;
+}
+
+
+.la{
+    margin: 0 2em 0 0;
+    flex: 0 0 10em;
+}
+
+.affiche {
+    width: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.pres {
+    color : white;
+}
+
+.rassemble {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.bas a {
+    text-decoration: none;
+    color : #9f9f9f;
+}
+
+.bas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.maison {
+    fill: #9f9f9f;
+}
+
+
+/*** --- VIDEOS --- ***/
+
+.videos figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -5px;
+}
+
+.videos figure {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10%;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.videos figure::before {
+    content: "► 1:51";
+    position: absolute;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 7px;
+    text-align: right;
+}
+
+.videos img {
+    width:33%
+}
+
+
+/*** --- TABLEAU --- ***/
+
+td,tr
+{
+    padding : 5px;
+    width: 20%;
+}
+
+table
+{
+    border-collapse: collapse;
+    cellspacing = "0";
+    width: 100%;
+}
+
+tr:nth-of-type(2n)
+{
+    background-color: rgba(255,255,255,0.25);
+}
+
+
+/*** --- ACTEURS --- ***/
+
+.acteurs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.acteurs figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.photoact {
+    position: relative;
+}
+
+
+.descr {
+    line-height: 0.1px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+
+/*** --- AVIS --- ***/
+
+article header {
+    display: flex;
+    align-items: center;
+}
+
+article header p {
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+}
+
+article header img {
+    width: 3%;
+    height: 3%;
+}
+
+article{
+    background-color: rgba(255,255,255, 0.25);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+/*** --- FOOTER --- ***/
+
+footer {
+    margin-top: 88px;
+    background-color: black;
+    color: white;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*** ---  MEDIA QUERIES --- ***/
+
+@media (max-width:600px){
+    .haut {
+        display: none;
+    }
+    
+    .visage {
+        background: url(simple_dashed/simple_dashed.png);
+        padding-top: 1%;
+    }
+    
+    .bas {
+        display: none;
+        
+    }
+    .croix {
+        display: block;
+    }
+    
+     
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Droid Sans', sans-serif;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: white;
+        line-height: 25px;
+        
+    }
+    
+    .navigation a:hover{
+        color: black;
+        background-color: white;
+        width : 20%;
+    }
+    
+    .burger {
+        display: inline-block;
+        border: 0;
+        background: none;
+        outline: 0;
+        padding: 0;
+        cursor: pointer;
+        margin-top:2%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        border-bottom: 4px solid white;
+        width: 28px;
+        transition: border-bottom 1s ease-in-out;
+        -webkit-transition: border-bottom 1s ease-in-out;
+    }
+    .burger::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+    .burger:before {
+      content: "";
+      display: block;
+      border-bottom: 4px solid white;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+    .burger:after {
+      content: "";
+      display: block;
+      border-bottom: 4px solid white;
+      width: 100%;
+      margin-bottom: 5px;
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .burger-check {
+      display: none;
+    }
+
+    .burger-check:checked ~ .burger {
+      border-bottom: 4px solid transparent;
+      transition: border-bottom 0.8s ease-in-out;
+      -webkit-transition: border-bottom 0.8s ease-in-out;
+    }
+    .burger-check:checked ~ .burger:before {
+      transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+    .burger-check:checked ~ .burger:after {
+      transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      transition: -webkit-transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .navigation {
+      overflow: hidden;
+      max-height: 0;
+      -webkit-transition: max-height 0.5s ease-in-out;
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    .burger-check:checked ~ .navigation {
+      max-height: 500px;
+      -webkit-transition: max-height 0.5s ease-in-out;
+      transition: max-height 0.5s ease-in-out;
+    }
+    
+   .acteurs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 4%;
+    }
+
+    .acteurs figure {
+        height: 250px;
+    }
+
+    .photoact {
+        margin-left: 20px;
+    }
+    
+    .descr {
+        margin-bottom: 20px;
+    }
+        
+    .videos {
+        display: block;
+    }
+
+    .imgart {
+        width: 15%;
+        height: 15%;
+    }
+
+}

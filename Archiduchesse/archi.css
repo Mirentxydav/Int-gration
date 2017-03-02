@@ -1,0 +1,289 @@
+/*** --- GENERAL --- ***/
+
+html {
+    font-family: Georgia,Times,serif;
+}
+
+body {
+    margin:0;
+}
+
+header, footer {
+    background-image: url(bg.png);
+}
+
+h1 {
+    display: none;
+}
+
+h2,h3 {
+    font-weight: normal;
+    font-size : 30px;
+}
+
+
+header {
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bleue {
+    display: none;
+}
+
+.lol {
+    display: none;
+}
+
+/*** --- IMAGE HAUT --- ***/
+
+.imghaut {
+    background-image: url(images/labonne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 520px;
+    width: 100%;
+}
+
+.pres {
+    position: absolute;
+    top:0;
+    right: 0;
+    width : 35%;
+    font-size: .9em;
+}
+
+.achat {
+    margin-top:10px;
+    width: 100%;
+}
+
+.pres a {
+    text-decoration: none;
+    background-color: #243CA5;
+    color: white;
+}
+
+.a1 {
+    padding: 2% 5% 2% 5%;
+}
+
+.imghaut form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+form div {
+    margin: 3px;
+}
+
+form {
+    margin-top : 25px;
+    margin-bottom: 20px;
+}
+
+.phot{
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+.phot img {
+    margin: 5px;
+    border: 3px solid white;
+}
+
+.myButton {
+    
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ad5a ', endColorstr='#68a54b ',GradientType=0);
+    background-color:#243ca5 ;
+    border:1px solid #243ca5 ;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff ;
+    font-size:15px;
+    font-weight:normal;
+    padding: 2% 20% 2% 20%;
+    text-decoration:none;
+    opacity: 0.8;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #243ca5 ), color-stop(1, #74ad5a ));
+    background:-moz-linear-gradient(top,#243ca5  5%, #243ca5  100%);
+    background:-webkit-linear-gradient(top, #243ca5  5%, #243ca5  100%);
+    background:-o-linear-gradient(top, #243ca5  5%, #243ca5  100%);
+    background:-ms-linear-gradient(top, #243ca5  5%, #243ca5  100%);
+    background:linear-gradient(to bottom, #243ca5  5%, ##243ca5  100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#243ca5 ', endColorstr='#243ca5 ',GradientType=0);
+    background-color:#243ca5 ;
+    opacity: 1;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+/*** --- CHAUSSETTES --- ***/
+
+figcaption {
+    line-height: 1.05em;
+    min-height: 2.3em;
+}
+
+.chaussettes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chaussettes figure {
+    position: relative;
+    padding :0;
+    margin:0;
+}
+
+.chaussettes a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width:calc(100%/6);
+}
+
+.chaussettes img {
+    width:100%;
+    margin: auto;
+}
+
+.chaussettes a {
+    display: block;
+    position: relative;
+}
+
+.chaussettes a figure::before {
+    position: absolute;
+    top:40%;
+    left:50%;
+    content : '+';
+    height : 1em;
+    width:1em;
+    margin-top: -.65em;
+    margin-left:-.65em;
+    text-align: center;
+    line-height: .875;
+    padding: .15em;
+    font-size: 2.5em;
+    background-color: black;
+    color : white;
+    border-radius : 50%;
+    opacity: 0;
+    transition: opacity .5s, transform .3s;
+    transition-timing-function: ease-out;
+    transform: scale(0.5) rotate(0);
+}
+
+.chaussettes a:hover figure::before {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+}
+
+
+/*** --- FOOTER --- ***/
+
+footer {
+    margin-top: 10%;
+    color: #4A4A4A ;
+    font-size: 12px; 
+    padding: 10px;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #4A4A4A ;
+}
+
+
+/*** --- MEDIA QUERIES --- ***/
+
+@media (max-width:981px){
+    .chaussettes a {
+        width:calc(100%/3);
+    }
+    
+    .wrapper{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .v1 {
+        display: none;
+    }
+    
+    .lol {
+        display: block;
+    }
+    
+    footer a {
+        display: none;
+    }
+
+}
+
+
+@media (max-width:767px){
+    .chaussettes a {
+        width:calc(100%/2);
+    }
+
+    
+    .imghaut {
+        background-image: none;
+        display: flex;
+        
+    }
+    .phot {
+        display: none;
+    }
+    .pres {
+        position: relative;
+        width: 100%;
+    }
+    
+    .bleue {
+        display: block;
+        margin: auto;
+    }
+    
+    form {
+        display: flex;
+        align-items: center;
+    }
+    
+    h2 {
+        margin-left: 20px;
+    }
+    
+    .v1 {
+        display: none;
+    }
+    
+    .achat {
+        display: block;
+        text-align: center;
+    }
+}
+

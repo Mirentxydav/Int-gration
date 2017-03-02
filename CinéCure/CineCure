@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang=fr>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Mood music </title>
+    </head>
+    
+    <body>
+        <header>            
+            <nav> 
+                <a href="#"> MoodMusic&copy; </a>
+                <a href="#"> screenshots </a>
+                <a href="#"> pricing </a>
+                <a href="#"> GET IT NOW </a>
+                <a href="#"> testimanies </a>
+                <a href="#"> </a>
+                <a href="#"> </a>
+            </nav>
+        </header>
+
+        <footer>
+        </footer>
+    </body>
+</html>
